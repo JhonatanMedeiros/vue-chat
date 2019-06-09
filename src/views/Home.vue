@@ -3,8 +3,8 @@
     <div class="img-logo">
       <img alt="Vue logo" src="../assets/logo.png">
     </div>
-    <div>
-      <b-form @submit="onSubmit($event)">
+    <div class="container">
+      <b-form @submit.stop.prevent="onSubmit">
         <b-form-group
                 id="input-group-username"
                 label="Username:"
@@ -33,9 +33,9 @@ import { Component, Vue } from 'vue-property-decorator';
 export default class Home extends Vue {
   public username: string = '';
 
-  public onSubmit(event: Event): void {
-    event.preventDefault();
+  public onSubmit(): void {
     // console.log('submit', this.username);
+    this.$router.push('/chat');
   }
 }
 </script>

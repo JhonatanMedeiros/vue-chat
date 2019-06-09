@@ -1,7 +1,7 @@
 <template>
   <div id="navbar">
     <b-navbar type="dark" variant="primary">
-      <b-navbar-brand href="#">
+      <b-navbar-brand to="/">
         VueJs Real Time Chat
       </b-navbar-brand>
       <b-navbar-nav class="ml-auto">
