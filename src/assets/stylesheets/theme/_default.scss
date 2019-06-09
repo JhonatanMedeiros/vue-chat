@@ -1,0 +1,12 @@
+@import "../abstracts/variables";
+
+/* import only the necessary Bootstrap files */
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+
+/* -------begin customization-------- */
+/* change the primary theme color to red */
+$theme-colors: (
+        primary: $primary-color
+);
+/* -------end customization-------- */

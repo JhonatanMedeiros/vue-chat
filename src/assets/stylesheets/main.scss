@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import "abstracts/variables";
+
+// 2. Themes
+@import "theme/default";
+
+// 3. Vendors
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../node_modules/bootstrap-vue/src/index';
+
